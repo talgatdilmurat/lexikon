@@ -1,0 +1,172 @@
+// starter-deck.js — Canadian citizenship starter deck (~140 cards).
+// Grounded in the themes of the official "Discover Canada" study guide.
+// Definitions are kept concept/role-based (not current officeholders) so they don't go stale.
+// Turkish glosses are drafted for a native-speaker learner and worth a quick review.
+// Seeded into the deck once on first run (see store.seedStarterOnce).
+
+export const STARTER_DECK = [
+  // ---------- Government & democracy ----------
+  { term: "Citizen", type: "word", pos: "noun", respelling: "SIT-uh-zin", english: "a full member of a country", turkish: "Vatandaş", example: "Every citizen has the right to vote." },
+  { term: "Citizenship", type: "word", pos: "noun", respelling: "SIT-uh-zin-ship", english: "being a citizen, with its rights and duties", turkish: "Vatandaşlık", example: "She is studying for her Canadian citizenship." },
+  { term: "Government", type: "word", pos: "noun", respelling: "GUV-ern-ment", english: "the group of people who run a country", turkish: "Hükümet", example: "The government makes laws for the country." },
+  { term: "Democracy", type: "word", pos: "noun", respelling: "dih-MOK-ruh-see", english: "a system where people choose leaders by voting", turkish: "Demokrasi", example: "In a democracy, the people vote." },
+  { term: "Constitution", type: "word", pos: "noun", respelling: "kon-stih-TOO-shun", english: "the main set of rules for how a country is run", turkish: "Anayasa", example: "The Constitution protects people's rights." },
+  { term: "Law", type: "word", pos: "noun", respelling: "LAW", english: "a rule that everyone must follow", turkish: "Yasa", example: "It is against the law to steal." },
+  { term: "Rights", type: "word", pos: "noun", respelling: "RYTS", english: "things you are free to do or have by law", turkish: "Haklar", example: "Canadians have the right to speak freely." },
+  { term: "Responsibilities", type: "word", pos: "noun", respelling: "rih-spon-suh-BIL-uh-teez", english: "things you should do as a member of society", turkish: "Sorumluluklar", example: "Obeying the law is one of our responsibilities." },
+  { term: "Freedom", type: "word", pos: "noun", respelling: "FREE-dum", english: "the right to act, speak, or think as you want", turkish: "Özgürlük", example: "Freedom of speech is important in Canada." },
+  { term: "Equality", type: "word", pos: "noun", respelling: "ih-KWOL-uh-tee", english: "being treated the same, with the same rights", turkish: "Eşitlik", example: "The law treats everyone with equality." },
+  { term: "Justice", type: "word", pos: "noun", respelling: "JUS-tis", english: "fair treatment under the law", turkish: "Adalet", example: "Courts work to bring justice." },
+  { term: "Vote", type: "word", pos: "verb", respelling: "VOHT", english: "to choose a leader or decision in an election", turkish: "Oy vermek", example: "Citizens vote to elect their leaders." },
+  { term: "Election", type: "word", pos: "noun", respelling: "ih-LEK-shun", english: "an event where people vote to choose leaders", turkish: "Seçim", example: "Canada holds an election every few years." },
+  { term: "Parliament", type: "word", pos: "noun", respelling: "PAR-luh-ment", english: "the group that makes Canada's laws", turkish: "Parlamento", example: "Parliament meets in Ottawa." },
+  { term: "Prime Minister", type: "phrase", pos: "noun", respelling: "prym MIN-is-ter", english: "the leader of Canada's government", turkish: "Başbakan", example: "The Prime Minister leads the country." },
+  { term: "Governor General", type: "phrase", pos: "noun", respelling: "GUV-er-ner JEN-er-ul", english: "the person who represents the King in Canada", turkish: "Genel Vali", example: "The Governor General signs new laws." },
+  { term: "Monarchy", type: "word", pos: "noun", respelling: "MON-ar-kee", english: "a system with a king or queen as head of state", turkish: "Monarşi", example: "Canada is a monarchy with a king." },
+  { term: "Monarch", type: "word", pos: "noun", respelling: "MON-ark", english: "a king or queen", turkish: "Hükümdar", example: "The monarch is Canada's head of state." },
+  { term: "Sovereign", type: "word", pos: "noun", respelling: "SOV-rin", english: "the king or queen; the head of state", turkish: "Hükümdar", example: "The Sovereign is represented by the Governor General." },
+  { term: "Federal", type: "word", pos: "adjective", respelling: "FED-er-ul", english: "about the central government of the whole country", turkish: "Federal", example: "The federal government sits in Ottawa." },
+  { term: "Member of Parliament", type: "phrase", pos: "noun", respelling: "MEM-ber uv PAR-luh-ment", english: "a person elected to Parliament (an MP)", turkish: "Milletvekili", example: "You vote for a Member of Parliament in your area." },
+  { term: "Cabinet", type: "word", pos: "noun", respelling: "KAB-uh-nit", english: "the senior ministers who help run the government", turkish: "Bakanlar Kurulu", example: "The Prime Minister chooses the Cabinet." },
+  { term: "Minister", type: "word", pos: "noun", respelling: "MIN-is-ter", english: "a member of government in charge of an area", turkish: "Bakan", example: "The minister of health leads healthcare policy." },
+  { term: "Opposition", type: "word", pos: "noun", respelling: "op-uh-ZISH-un", english: "the parties not in power that question the government", turkish: "Muhalefet", example: "The Opposition questions the government's plans." },
+  { term: "Govern", type: "word", pos: "verb", respelling: "GUV-ern", english: "to rule or control a country", turkish: "Yönetmek", example: "Elected leaders govern the country." },
+
+  // ---------- Voting & elections ----------
+  { term: "Ballot", type: "word", pos: "noun", respelling: "BAL-ut", english: "the paper you use to vote", turkish: "Oy pusulası", example: "She marked her ballot and voted." },
+  { term: "Candidate", type: "word", pos: "noun", respelling: "KAN-dih-dayt", english: "a person who runs to be elected", turkish: "Aday", example: "Each candidate wants your vote." },
+  { term: "Riding", type: "word", pos: "noun", respelling: "RY-ding", english: "the local area that one MP represents", turkish: "Seçim bölgesi", example: "Each riding elects one Member of Parliament." },
+  { term: "Polling station", type: "phrase", pos: "noun", respelling: "POH-ling STAY-shun", english: "the place where you go to vote", turkish: "Oy verme yeri", example: "Go to your polling station on election day." },
+  { term: "Secret ballot", type: "phrase", pos: "noun", respelling: "SEE-krit BAL-ut", english: "voting privately so no one knows your choice", turkish: "Gizli oy", example: "Canada uses a secret ballot." },
+  { term: "Majority", type: "word", pos: "noun", respelling: "muh-JOR-uh-tee", english: "more than half of the votes or seats", turkish: "Çoğunluk", example: "The party won a majority of the seats." },
+  { term: "Minority", type: "word", pos: "noun", respelling: "my-NOR-uh-tee", english: "less than half; a smaller group", turkish: "Azınlık", example: "A minority government holds fewer than half the seats." },
+  { term: "Political party", type: "phrase", pos: "noun", respelling: "puh-LIT-ih-kul PAR-tee", english: "a group with shared ideas that runs in elections", turkish: "Siyasi parti", example: "He joined a political party." },
+  { term: "Elect", type: "word", pos: "verb", respelling: "ih-LEKT", english: "to choose someone by voting", turkish: "Seçmek", example: "Canadians elect their Members of Parliament." },
+  { term: "Represent", type: "word", pos: "verb", respelling: "rep-rih-ZENT", english: "to speak or act for other people", turkish: "Temsil etmek", example: "An MP represents the people of their riding." },
+
+  // ---------- Levels of government & the law ----------
+  { term: "Province", type: "word", pos: "noun", respelling: "PROV-ins", english: "one of Canada's ten main regions, each with its own government", turkish: "Eyalet", example: "Ontario is a province." },
+  { term: "Territory", type: "word", pos: "noun", respelling: "TERR-uh-tor-ee", english: "one of Canada's three northern regions", turkish: "Bölge", example: "Yukon is a territory." },
+  { term: "Municipal government", type: "phrase", pos: "noun", respelling: "myoo-NIS-uh-pul", english: "the local government of a city or town", turkish: "Belediye", example: "The municipal government fixes local roads." },
+  { term: "Premier", type: "word", pos: "noun", respelling: "PREM-eer", english: "the leader of a provincial government", turkish: "Eyalet başbakanı", example: "Each province has a premier." },
+  { term: "Mayor", type: "word", pos: "noun", respelling: "MAY-er", english: "the leader of a city or town", turkish: "Belediye başkanı", example: "The mayor runs the city." },
+  { term: "Court", type: "word", pos: "noun", respelling: "KORT", english: "a place where judges decide legal cases", turkish: "Mahkeme", example: "The court decides if someone broke the law." },
+  { term: "Judge", type: "word", pos: "noun", respelling: "JUJ", english: "a person who makes decisions in a court", turkish: "Yargıç", example: "The judge listened to both sides." },
+  { term: "Jury", type: "word", pos: "noun", respelling: "JOOR-ee", english: "a group of citizens who decide a court case", turkish: "Jüri", example: "Serving on a jury is a responsibility." },
+  { term: "Rule of law", type: "phrase", pos: "noun", respelling: "ROOL uv LAW", english: "the idea that everyone, even leaders, must obey the law", turkish: "Hukukun üstünlüğü", example: "The rule of law protects everyone equally." },
+  { term: "Tax", type: "word", pos: "noun", respelling: "TAKS", english: "money people pay to the government for public services", turkish: "Vergi", example: "We pay tax to support schools and roads." },
+
+  // ---------- Rights & responsibilities ----------
+  { term: "Charter of Rights and Freedoms", type: "phrase", pos: "noun", respelling: "CHAR-ter", english: "the part of the Constitution that lists basic rights", turkish: "Haklar ve Özgürlükler Şartı", example: "The Charter protects freedom of speech." },
+  { term: "Freedom of speech", type: "phrase", pos: "noun", respelling: "", english: "the right to say your opinion", turkish: "İfade özgürlüğü", example: "Freedom of speech lets people share ideas." },
+  { term: "Freedom of religion", type: "phrase", pos: "noun", respelling: "", english: "the right to follow any religion, or none", turkish: "Din özgürlüğü", example: "Freedom of religion is protected by law." },
+  { term: "Equality of men and women", type: "phrase", pos: "noun", respelling: "", english: "men and women have the same rights", turkish: "Kadın-erkek eşitliği", example: "Canada supports the equality of men and women." },
+  { term: "Obey the law", type: "phrase", pos: "verb", respelling: "", english: "to follow the rules of the country", turkish: "Yasalara uymak", example: "All people in Canada must obey the law." },
+  { term: "Pay taxes", type: "phrase", pos: "verb", respelling: "", english: "to give the government the money you owe", turkish: "Vergi ödemek", example: "Citizens must pay taxes." },
+  { term: "Serve on a jury", type: "phrase", pos: "verb", respelling: "", english: "to help decide a court case when asked", turkish: "Jüri görevi yapmak", example: "You may be asked to serve on a jury." },
+  { term: "Volunteer", type: "word", pos: "verb", respelling: "vol-un-TEER", english: "to help your community without pay", turkish: "Gönüllü olmak", example: "Many people volunteer to help others." },
+  { term: "Duty", type: "word", pos: "noun", respelling: "DOO-tee", english: "something you must do; a responsibility", turkish: "Görev", example: "Voting is a duty of a citizen." },
+  { term: "Loyalty", type: "word", pos: "noun", respelling: "LOY-ul-tee", english: "being faithful to your country", turkish: "Sadakat", example: "New citizens promise loyalty to Canada." },
+
+  // ---------- Language & identity ----------
+  { term: "Bilingual", type: "word", pos: "adjective", respelling: "by-LING-gwul", english: "able to use two languages", turkish: "İki dilli", example: "Canada is officially bilingual." },
+  { term: "Official languages", type: "phrase", pos: "noun", respelling: "", english: "English and French, Canada's two main languages", turkish: "Resmî diller", example: "Canada's official languages are English and French." },
+  { term: "Multiculturalism", type: "word", pos: "noun", respelling: "mul-tee-KUL-cher-ul-iz-um", english: "many cultures living together in one country", turkish: "Çok kültürlülük", example: "Multiculturalism is part of Canadian identity." },
+  { term: "Diversity", type: "word", pos: "noun", respelling: "dih-VER-sih-tee", english: "many different kinds of people or things", turkish: "Çeşitlilik", example: "Canada is proud of its diversity." },
+  { term: "Identity", type: "word", pos: "noun", respelling: "eye-DEN-tih-tee", english: "who a person or group is", turkish: "Kimlik", example: "Hockey is part of Canada's identity." },
+  { term: "Community", type: "word", pos: "noun", respelling: "kuh-MYOO-nih-tee", english: "a group of people living in the same area", turkish: "Topluluk", example: "She helps out in her local community." },
+  { term: "Society", type: "word", pos: "noun", respelling: "suh-SY-uh-tee", english: "all the people living together under shared rules", turkish: "Toplum", example: "Everyone has a role in society." },
+
+  // ---------- History & Confederation ----------
+  { term: "Confederation", type: "word", pos: "noun", respelling: "kun-fed-uh-RAY-shun", english: "the joining of colonies to create Canada in 1867", turkish: "Konfederasyon", example: "Confederation created Canada in 1867." },
+  { term: "Colony", type: "word", pos: "noun", respelling: "KOL-uh-nee", english: "a land ruled by another country", turkish: "Koloni", example: "Canada was once a group of British colonies." },
+  { term: "Dominion", type: "word", pos: "noun", respelling: "duh-MIN-yun", english: "the name for Canada as a self-governing country in 1867", turkish: "Dominyon", example: "In 1867 Canada became a dominion." },
+  { term: "Fathers of Confederation", type: "phrase", pos: "noun", respelling: "", english: "the leaders who joined the colonies to form Canada", turkish: "Konfederasyonun Kurucuları", example: "The Fathers of Confederation met in 1864." },
+  { term: "Sir John A. Macdonald", type: "phrase", pos: "noun", respelling: "", english: "Canada's first Prime Minister", turkish: "Kanada'nın ilk Başbakanı", example: "Sir John A. Macdonald was the first Prime Minister." },
+  { term: "New France", type: "phrase", pos: "noun", respelling: "", english: "the early French settlement in Canada", turkish: "Yeni Fransa", example: "Quebec City was the heart of New France." },
+  { term: "Loyalist", type: "word", pos: "noun", respelling: "LOY-uh-list", english: "a settler loyal to Britain who moved to Canada", turkish: "Krala sadık göçmen", example: "Many Loyalists settled in Canada in the 1780s." },
+  { term: "Responsible government", type: "phrase", pos: "noun", respelling: "", english: "a government that must answer to elected representatives", turkish: "Sorumlu hükümet", example: "Reformers fought for responsible government." },
+  { term: "Reformer", type: "word", pos: "noun", respelling: "rih-FOR-mer", english: "a person who works to improve government", turkish: "Reformcu", example: "A reformer wants to make things better." },
+  { term: "Rebellion", type: "word", pos: "noun", respelling: "rih-BEL-yun", english: "a fight against the government", turkish: "İsyan", example: "There were rebellions in 1837." },
+  { term: "Treaty", type: "word", pos: "noun", respelling: "TREE-tee", english: "an official agreement between groups or nations", turkish: "Antlaşma", example: "The government signed treaties with First Nations." },
+  { term: "War", type: "word", pos: "noun", respelling: "WOR", english: "a fight between countries or large groups", turkish: "Savaş", example: "Many Canadians served in the war." },
+  { term: "Battle", type: "word", pos: "noun", respelling: "BAT-ul", english: "a fight between armies during a war", turkish: "Muharebe", example: "The battle lasted several days." },
+  { term: "Veteran", type: "word", pos: "noun", respelling: "VET-er-un", english: "a person who served in the military", turkish: "Gazi", example: "We honour veterans on Remembrance Day." },
+  { term: "Remembrance Day", type: "phrase", pos: "noun", respelling: "rih-MEM-bruns", english: "November 11, when we honour those who died in war", turkish: "Anma Günü", example: "We wear a poppy on Remembrance Day." },
+  { term: "Independence", type: "word", pos: "noun", respelling: "in-dih-PEN-dens", english: "being free from another country's control", turkish: "Bağımsızlık", example: "Canada slowly gained its independence." },
+  { term: "Union", type: "word", pos: "noun", respelling: "YOON-yun", english: "the joining of parts into one", turkish: "Birlik", example: "Confederation was a union of colonies." },
+  { term: "Settle", type: "word", pos: "verb", respelling: "SET-ul", english: "to make a home in a new place", turkish: "Yerleşmek", example: "Immigrants settled across the country." },
+
+  // ---------- Indigenous peoples ----------
+  { term: "Indigenous", type: "word", pos: "adjective", respelling: "in-DIJ-uh-nus", english: "the first peoples who lived in Canada", turkish: "Yerli", example: "Indigenous peoples have lived here for thousands of years." },
+  { term: "Aboriginal", type: "word", pos: "adjective", respelling: "ab-uh-RIJ-uh-nul", english: "another word for Indigenous peoples", turkish: "Yerli", example: "Aboriginal peoples include First Nations, Inuit, and Métis." },
+  { term: "First Nations", type: "phrase", pos: "noun", respelling: "", english: "Indigenous peoples of Canada who are not Inuit or Métis", turkish: "İlk Milletler", example: "The First Nations signed treaties with the Crown." },
+  { term: "Métis", type: "word", pos: "noun", respelling: "may-TEE", english: "people of mixed Indigenous and European ancestry", turkish: "Métis", example: "The Métis have their own history and culture." },
+  { term: "Inuit", type: "word", pos: "noun", respelling: "IN-oo-it", english: "Indigenous people of Canada's Arctic north", turkish: "Inuit", example: "The Inuit live in the far north." },
+
+  // ---------- Symbols & culture ----------
+  { term: "Flag", type: "word", pos: "noun", respelling: "FLAG", english: "a piece of cloth that is a symbol of a country", turkish: "Bayrak", example: "The Canadian flag is red and white." },
+  { term: "Maple leaf", type: "phrase", pos: "noun", respelling: "MAY-pul LEEF", english: "the leaf that is a symbol of Canada", turkish: "Akçaağaç yaprağı", example: "The maple leaf is on the Canadian flag." },
+  { term: "National anthem", type: "phrase", pos: "noun", respelling: "ANTH-um", english: "a country's official song", turkish: "Milli marş", example: "Everyone stood for the national anthem." },
+  { term: "O Canada", type: "phrase", pos: "noun", respelling: "", english: "the national anthem of Canada", turkish: "O Canada (milli marş)", example: "We sang O Canada before the game." },
+  { term: "Crown", type: "word", pos: "noun", respelling: "KROWN", english: "the symbol of the monarchy and the state", turkish: "Taç", example: "First Nations signed treaties with the Crown." },
+  { term: "Coat of arms", type: "phrase", pos: "noun", respelling: "KOHT uv ARMZ", english: "the official symbol of a country or family", turkish: "Arma", example: "Canada has its own coat of arms." },
+  { term: "Beaver", type: "word", pos: "noun", respelling: "BEE-ver", english: "a small animal that is a symbol of Canada", turkish: "Kunduz", example: "The beaver is a national symbol." },
+  { term: "Poppy", type: "word", pos: "noun", respelling: "POP-ee", english: "a red flower worn to remember soldiers", turkish: "Gelincik", example: "People wear a poppy in November." },
+  { term: "Hockey", type: "word", pos: "noun", respelling: "HOK-ee", english: "a popular Canadian sport played on ice", turkish: "Hokey", example: "Ice hockey is loved across Canada." },
+  { term: "Motto", type: "word", pos: "noun", respelling: "MOT-oh", english: "a short phrase that states a belief", turkish: "Özdeyiş", example: "Canada's motto means 'From Sea to Sea'." },
+
+  // ---------- Geography: provinces & territories ----------
+  { term: "Ottawa", type: "word", pos: "noun", respelling: "OT-uh-wuh", english: "the capital city of Canada", turkish: "Ottawa (Kanada'nın başkenti)", example: "Parliament is in Ottawa." },
+  { term: "Ontario", type: "word", pos: "noun", respelling: "on-TAIR-ee-oh", english: "a province; its capital is Toronto", turkish: "Ontario", example: "Ontario is Canada's most populated province." },
+  { term: "Quebec", type: "word", pos: "noun", respelling: "kwih-BEK", english: "a mainly French-speaking province; capital Quebec City", turkish: "Quebec", example: "Most people in Quebec speak French." },
+  { term: "Nova Scotia", type: "phrase", pos: "noun", respelling: "NOH-vuh SKOH-shuh", english: "an Atlantic province; capital Halifax", turkish: "Nova Scotia", example: "Nova Scotia is on the Atlantic coast." },
+  { term: "New Brunswick", type: "phrase", pos: "noun", respelling: "noo BRUNZ-wik", english: "an Atlantic province; capital Fredericton", turkish: "New Brunswick", example: "New Brunswick is officially bilingual." },
+  { term: "Manitoba", type: "word", pos: "noun", respelling: "man-ih-TOH-buh", english: "a prairie province; capital Winnipeg", turkish: "Manitoba", example: "Manitoba is in central Canada." },
+  { term: "British Columbia", type: "phrase", pos: "noun", respelling: "BRIT-ish kuh-LUM-bee-uh", english: "the westernmost province; capital Victoria", turkish: "British Columbia", example: "British Columbia is on the Pacific coast." },
+  { term: "Prince Edward Island", type: "phrase", pos: "noun", respelling: "", english: "the smallest province; capital Charlottetown", turkish: "Prince Edward Adası", example: "Prince Edward Island is a small Atlantic province." },
+  { term: "Saskatchewan", type: "word", pos: "noun", respelling: "suh-SKAT-chuh-wun", english: "a prairie province; capital Regina", turkish: "Saskatchewan", example: "Saskatchewan grows a lot of wheat." },
+  { term: "Alberta", type: "word", pos: "noun", respelling: "al-BUR-tuh", english: "a prairie province; capital Edmonton", turkish: "Alberta", example: "Alberta is known for oil and cattle." },
+  { term: "Newfoundland and Labrador", type: "phrase", pos: "noun", respelling: "", english: "an eastern province; capital St. John's", turkish: "Newfoundland ve Labrador", example: "Newfoundland and Labrador is the most eastern province." },
+  { term: "Yukon", type: "word", pos: "noun", respelling: "YOO-kon", english: "a northern territory; capital Whitehorse", turkish: "Yukon", example: "Yukon borders Alaska." },
+  { term: "Northwest Territories", type: "phrase", pos: "noun", respelling: "", english: "a northern territory; capital Yellowknife", turkish: "Kuzeybatı Toprakları", example: "The Northwest Territories are very cold in winter." },
+  { term: "Nunavut", type: "word", pos: "noun", respelling: "NOO-nuh-voot", english: "a northern territory; capital Iqaluit", turkish: "Nunavut", example: "Nunavut is home to many Inuit." },
+
+  // ---------- Geography: general ----------
+  { term: "Capital", type: "word", pos: "noun", respelling: "KAP-uh-tul", english: "the city where a government is based", turkish: "Başkent", example: "Ottawa is the capital of Canada." },
+  { term: "Border", type: "word", pos: "noun", respelling: "BOR-der", english: "the line where one country meets another", turkish: "Sınır", example: "Canada shares a border with the United States." },
+  { term: "Atlantic", type: "word", pos: "noun", respelling: "at-LAN-tik", english: "the ocean and region on Canada's east", turkish: "Atlantik", example: "The Atlantic coast has four provinces." },
+  { term: "Pacific", type: "word", pos: "noun", respelling: "puh-SIF-ik", english: "the ocean on Canada's west", turkish: "Pasifik", example: "British Columbia is on the Pacific." },
+  { term: "Arctic", type: "word", pos: "noun", respelling: "ARK-tik", english: "the cold ocean and region in the far north", turkish: "Kuzey Kutbu", example: "The Inuit live in the Arctic." },
+  { term: "Prairie", type: "word", pos: "noun", respelling: "PRAIR-ee", english: "flat grassland in central Canada", turkish: "Bozkır", example: "Wheat grows on the prairie." },
+  { term: "Region", type: "word", pos: "noun", respelling: "REE-jun", english: "a large area of land", turkish: "Bölge", example: "Canada has five main regions." },
+  { term: "Continent", type: "word", pos: "noun", respelling: "KON-tuh-nent", english: "one of the world's large land areas", turkish: "Kıta", example: "Canada is in the continent of North America." },
+  { term: "Nation", type: "word", pos: "noun", respelling: "NAY-shun", english: "a country and its people", turkish: "Ulus", example: "Canada is a peaceful nation." },
+  { term: "National", type: "word", pos: "adjective", respelling: "NASH-uh-nul", english: "belonging to a whole nation", turkish: "Ulusal", example: "Hockey is a national sport." },
+
+  // ---------- Economy & society ----------
+  { term: "Economy", type: "word", pos: "noun", respelling: "ih-KON-uh-mee", english: "how a country makes and uses money and goods", turkish: "Ekonomi", example: "Canada has a strong economy." },
+  { term: "Industry", type: "word", pos: "noun", respelling: "IN-dus-tree", english: "businesses that make goods or services", turkish: "Sanayi", example: "The oil industry is big in Alberta." },
+  { term: "Natural resources", type: "phrase", pos: "noun", respelling: "", english: "useful things from nature, like oil, wood, and water", turkish: "Doğal kaynaklar", example: "Canada is rich in natural resources." },
+  { term: "Trade", type: "word", pos: "noun", respelling: "TRAYD", english: "buying and selling goods between people or countries", turkish: "Ticaret", example: "Canada trades with many countries." },
+  { term: "Employment", type: "word", pos: "noun", respelling: "em-PLOY-ment", english: "having a job; paid work", turkish: "İstihdam", example: "New citizens look for employment." },
+  { term: "Healthcare", type: "word", pos: "noun", respelling: "HELTH-kair", english: "medical care and services for people", turkish: "Sağlık hizmeti", example: "Canada has public healthcare." },
+  { term: "Education", type: "word", pos: "noun", respelling: "ej-uh-KAY-shun", english: "teaching and learning, usually in schools", turkish: "Eğitim", example: "Education is free for children in Canada." },
+
+  // ---------- Becoming a citizen ----------
+  { term: "Immigrant", type: "word", pos: "noun", respelling: "IM-uh-grunt", english: "a person who moves to live in a new country", turkish: "Göçmen", example: "Canada welcomes immigrants from around the world." },
+  { term: "Permanent resident", type: "phrase", pos: "noun", respelling: "PER-muh-nent REZ-ih-dent", english: "a person allowed to live in Canada but not yet a citizen", turkish: "Daimi oturum sahibi", example: "A permanent resident can apply for citizenship." },
+  { term: "Naturalization", type: "word", pos: "noun", respelling: "nat-cher-ul-ih-ZAY-shun", english: "the process of becoming a citizen", turkish: "Vatandaşlığa kabul", example: "Naturalization is how newcomers become citizens." },
+  { term: "Oath of Citizenship", type: "phrase", pos: "noun", respelling: "OHTH", english: "the promise new citizens make to Canada", turkish: "Vatandaşlık Yemini", example: "New citizens take the Oath of Citizenship." },
+  { term: "Citizenship test", type: "phrase", pos: "noun", respelling: "", english: "the test you take to become a citizen", turkish: "Vatandaşlık sınavı", example: "He passed the citizenship test." },
+  { term: "Application", type: "word", pos: "noun", respelling: "ap-lih-KAY-shun", english: "a form you fill in to ask for something", turkish: "Başvuru", example: "She sent her citizenship application." },
+  { term: "Document", type: "word", pos: "noun", respelling: "DOK-yoo-ment", english: "an official paper, like an ID or passport", turkish: "Belge", example: "Bring your documents to the test." },
+  { term: "Passport", type: "word", pos: "noun", respelling: "PASS-port", english: "an official document for travel between countries", turkish: "Pasaport", example: "A citizen can get a Canadian passport." },
+  { term: "Belong", type: "word", pos: "verb", respelling: "bih-LONG", english: "to be a member of a group", turkish: "Ait olmak", example: "New citizens feel they belong to Canada." },
+
+  // ---------- Values & good government ----------
+  { term: "Peace", type: "word", pos: "noun", respelling: "PEES", english: "a time without war; calm", turkish: "Barış", example: "Canada is known for peace." },
+  { term: "Order", type: "word", pos: "noun", respelling: "OR-der", english: "a calm, well-run society that follows rules", turkish: "Düzen", example: "'Peace, order, and good government' is a key idea." },
+  { term: "Protect", type: "word", pos: "verb", respelling: "pruh-TEKT", english: "to keep safe from harm", turkish: "Korumak", example: "The law protects your rights." },
+  { term: "Obey", type: "word", pos: "verb", respelling: "oh-BAY", english: "to do what a law or person says", turkish: "Uymak", example: "Everyone must obey the law." },
+];

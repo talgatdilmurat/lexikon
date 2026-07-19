@@ -1,6 +1,6 @@
 // sw.js — cache-first app shell so reviewing saved cards works offline.
 // AI/dictionary calls go to the network (never cached). Bump CACHE to ship updates.
-const CACHE = 'lexikon-v1';
+const CACHE = 'lexikon-v2';
 const ASSETS = [
   './',
   './index.html',
@@ -10,6 +10,7 @@ const ASSETS = [
   './js/util.js',
   './js/icons.js',
   './js/store.js',
+  './js/starter-deck.js',
   './js/scheduler.js',
   './js/ai.js',
   './js/audio.js',

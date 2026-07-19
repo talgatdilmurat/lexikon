@@ -4,6 +4,11 @@ import { hazine } from './screens/hazine.js';
 import { quiz } from './screens/quiz.js';
 import { decode } from './screens/decode.js';
 import { tabIcons } from './icons.js';
+import * as store from './store.js';
+import { STARTER_DECK } from './starter-deck.js';
+
+// First run only: seed the bundled citizenship starter deck (see store.seedStarterOnce).
+store.seedStarterOnce(STARTER_DECK);
 
 const ROUTES = { study, hazine, quiz, decode };
 const ORDER = ['study', 'hazine', 'quiz', 'decode'];

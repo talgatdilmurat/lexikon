@@ -87,6 +87,26 @@ export function getApiKey() { return getSetting('apiKey', '') || ''; }
 export function setApiKey(v) { setSetting('apiKey', (v || '').trim()); }
 export function hasApiKey() { return !!getApiKey(); }
 
+// ---------- starter deck (seed once) ----------
+// Seed the bundled starter deck the first time the app runs. Gated by a flag so it
+// never re-adds cards the user later deletes. Dedupes by term via addCard.
+export function seedStarterOnce(deck) {
+  if (getSetting('starterLoaded')) return 0;
+  let added = 0;
+  for (const d of (deck || [])) {
+    try {
+      const { created } = addCard({
+        term: d.term, type: d.type, pos: d.pos, respelling: d.respelling,
+        english: d.english, turkish: d.turkish,
+        example: d.example ? { en: d.example, source: 'starter' } : null,
+      });
+      if (created) added++;
+    } catch {}
+  }
+  setSetting('starterLoaded', true);
+  return added;
+}
+
 // ---------- meta (streak) ----------
 export function getMeta() { return read(K.meta, { streak: 0, lastActive: null }); }
 function setMeta(m) { write(K.meta, m); }
